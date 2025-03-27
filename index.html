@@ -9,12 +9,12 @@
 <body>
     <div class="game-container">
         <h1>Snake, Water, Gun Game</h1>
-        <p> Choose: <b>Snake <strong>🐍</strong></b>, <b>Water <strong>💧</strong></b>, or <b>Gun <strong>🔫</strong></b></p>
+        <p>Choose: <b>Snake <strong>🐍</strong></b>, <b>Water <strong>💧</strong></b>, or <b>Gun <strong>🔫</strong></b></p>
         
         <div class="buttons">
-            <button onclick="playGame('s')"><b>Snake 🐍</b></button>
-            <button onclick="playGame('w')"><b>Water 💧</b></button>
-            <button onclick="playGame('g')"><b></b>Gun 🔫</b></button>
+            <button onclick="playGame('s')" id="btnSnake"><b>Snake 🐍</b></button>
+            <button onclick="playGame('w')" id="btnWater"><b>Water 💧</b></button>
+            <button onclick="playGame('g')" id="btnGun"><b>Gun 🔫</b></button>
         </div>
 
         <div class="result-container">
@@ -25,7 +25,25 @@
             <p class="left-align"><b>Result:</b> <span id="gameResult"></span></p>
         </div>
 
-        <button id="playAgain" onclick="resetGame()">Play Again 🔄</button>
+        <button id="playAgain" onclick="resetGame()" disabled>Play Again 🔄</button>
+
+        <!-- Game History Section -->
+        <div class="history-container">
+            <h2>Game History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Your Choice</th>
+                        <th>Computer's Choice</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable">
+                    <!-- Game results will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="script.js"></script>
