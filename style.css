@@ -1,9 +1,7 @@
 body {
-    font-family: "Arial", "Roboto", "Helvetica", sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
 }
 
 .game-container {
@@ -22,17 +20,16 @@ body {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 .buttons button:nth-child(1) { background: gold; }
 .buttons button:nth-child(2) { background: deepskyblue; }
 .buttons button:nth-child(3) { background: tomato; }
 
-strong, b {
-    font-weight: 900 !important;
-    font-family: "Arial", "Roboto", "Helvetica", sans-serif;
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2); /* Extra bold effect */
+.result-container {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .choices {
@@ -40,8 +37,8 @@ strong, b {
     justify-content: space-between;
 }
 
-.choices span strong {
-    font-weight: 900 !important;
+.choices span {
+    font-weight: bold;
 }
 
 .centre-align {
@@ -58,9 +55,4 @@ strong, b {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-}
-
-p, span {
-    font-size: 18px;
 }
