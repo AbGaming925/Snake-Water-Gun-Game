@@ -5,10 +5,10 @@ body {
 }
 
 .game-container {
-    width: 450px; /* Increased width */
+    width: 450px;
     margin: 50px auto;
     background: white;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -41,10 +41,6 @@ body {
     font-weight: bold;
 }
 
-.centre-align {
-    text-align: center;
-}
-
 #playAgain {
     display: block;
     margin: 20px auto;
@@ -55,4 +51,28 @@ body {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#playAgain:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.history-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
 }
