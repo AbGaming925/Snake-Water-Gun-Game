@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake, Water, Gun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake, Water, Gun Game</h1>
+        <p> Choose: <b>Snake <strong>🐍</strong></b>, <b>Water <strong>💧</strong></b>, or <b>Gun <strong>🔫</strong></b></p>
+        
+        <div class="buttons">
+            <button onclick="playGame('s')"><b>Snake 🐍</b></button>
+            <button onclick="playGame('w')"><b>Water 💧</b></button>
+            <button onclick="playGame('g')"><b></b>Gun 🔫</b></button>
+        </div>
+
+        <div class="result-container">
+            <div class="choices">
+                <p class="left-align"><b>You chose:</b> <span id="userChoice"></span></p>
+                <p class="right-align"><b>Computer chose:</b> <span id="computerChoice"></span></p>
+            </div>
+            <p class="left-align"><b>Result:</b> <span id="gameResult"></span></p>
+        </div>
+
+        <button id="playAgain" onclick="resetGame()">Play Again 🔄</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
